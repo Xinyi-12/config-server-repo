@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/employee_db
+  application:
+    name: EMPLOYEE-SERVICE
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
